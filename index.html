@@ -21,22 +21,21 @@
                     <h1>Amir Mohseni</h1>
                     <p class="affiliation">Student Researcher, Turing</p>
                     <p class="email">amir.mohseni [AT] student.maastrichtuniversity.nl</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/amirreza-mohseni" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Amir-Mohseni" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://huggingface.co/AmirMohseni" target="_blank" rel="noopener noreferrer" aria-label="Hugging Face">
+                            <img src="images/hf_logo.png" alt="Hugging Face" class="hf-logo">
+                        </a>
+                        <a href="cv/Amir_Mohseni_CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="CV">
+                            <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="social-links">
-                <a href="https://linkedin.com/in/amirreza-mohseni" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/Amir-Mohseni" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://huggingface.co/AmirMohseni" target="_blank" rel="noopener noreferrer" aria-label="Hugging Face">
-                    <img src="images/hf_logo.png" alt="Hugging Face" class="hf-logo">
-                </a>
-                <a href="cv/Amir_Mohseni_CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="CV">
-                    <i class="fas fa-file-pdf"></i>
-                </a>
             </div>
             
             <nav>
@@ -52,6 +51,24 @@
             <section id="home" class="content-section active">
                 <p>I'm finishing my Bachelor's in Computer Science at <strong>Maastricht University</strong>, where I've been conducting research in AI and machine learning. Currently working as a Student Researcher at <strong>Turing</strong>, focusing on large language models and reinforcement learning.</p>
                 <p>I'm actively seeking opportunities for Master's or PhD programs to further deepen my research in AI, particularly in <strong>LLM reasoning</strong>, <strong>agentic systems</strong>, and the intersection of AI with <strong>educational applications</strong>.</p>
+                
+                <div class="news-section">
+                    <h2>News</h2>
+                    
+                    <div class="news-grid">
+                        <div class="news-card">
+                            <a href="https://huggingface.co/blog/AmirMohseni/reasoning-router" target="_blank" rel="noopener noreferrer" class="news-link">
+                                <div class="news-thumbnail">
+                                    <img src="https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/AmirMohseni/reasoning-router.png" alt="Reasoning Router">
+                                </div>
+                                <div class="news-content">
+                                    <h3>Reasoning Router: Optimizing LLM Reasoning Efficiency</h3>
+                                    <p class="news-date">Recent</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section id="experience" class="content-section">
@@ -184,7 +201,7 @@
                 });
             });
             
-            // Handle initial hash on page load
+                    // Handle initial hash on page load
             const hash = window.location.hash.substring(1);
             if (hash && ['home', 'experience', 'research'].includes(hash)) {
                 navLinks.forEach(l => l.classList.remove('active'));
