@@ -1,216 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amir Mohseni</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amir Mohseni</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background-animation">
-        <div class="gradient-orb orb-1"></div>
-        <div class="gradient-orb orb-2"></div>
-        <div class="gradient-orb orb-3"></div>
-    </div>
-    <div class="container">
-        <header>
-            <div class="profile-section">
-                <img src="images/026.JPG" alt="Amir Mohseni" class="profile-image" loading="eager">
-                <div class="profile-info">
-                    <h1>Amir Mohseni</h1>
-                    <p class="affiliation">Student Researcher, Turing</p>
-                    <p class="email">amir.mohseni [AT] student.maastrichtuniversity.nl</p>
-                    <div class="social-links">
-                        <a href="https://linkedin.com/in/amirreza-mohseni" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/Amir-Mohseni" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://huggingface.co/AmirMohseni" target="_blank" rel="noopener noreferrer" aria-label="Hugging Face">
-                            <img src="images/hf_logo.png" alt="Hugging Face" class="hf-logo">
-                        </a>
-                        <a href="cv/Amir_Mohseni_CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="CV">
-                            <i class="fas fa-file-pdf"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <nav>
-                <ul>
-                    <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
-                    <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
-                    <li><a href="#research" class="nav-link" data-section="research">Research</a></li>
-                </ul>
-            </nav>
+  <div class="page">
+    <header class="site-header">
+      <img src="assets/images/profile.jpg" alt="Amir Mohseni" class="profile-image" loading="eager">
+
+      <div class="profile-info">
+        <h1>Amir Mohseni</h1>
+        <p class="affiliation">Researcher, Turing</p>
+        <p class="contact">amir.mohseni [AT] student.maastrichtuniversity.nl</p>
+
+        <nav class="profile-links" aria-label="External links">
+          <a href="https://linkedin.com/in/amirreza-mohseni" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/Amir-Mohseni" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://huggingface.co/AmirMohseni" target="_blank" rel="noopener noreferrer">Hugging Face</a>
+          <a href="assets/documents/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro">
+        <p>
+          I'm a computer science student working as a researcher at
+          <a href="https://www.turing.com/">Turing</a> in the field of LLMs and agentic AI.
+          I completed my bachelor's in computer science at
+          <a href="https://www.maastrichtuniversity.nl/">Maastricht University</a>, and I will begin
+          the MSc in Advanced Computer Science at
+          <a href="https://www.ox.ac.uk/">Oxford</a> this October.
+        </p>
+        <p>
+          My current research interests are model self-improvement and improving model capabilities
+          on long-horizon tasks.
+        </p>
+      </section>
+
+      <section class="collapsible collapsed" id="news">
+        <header class="collapsible-header">
+          <button
+            type="button"
+            class="collapsible-toggle"
+            aria-expanded="false"
+            aria-controls="news-body"
+            aria-label="Toggle News section"
+          >
+            <span class="toggle-icon" aria-hidden="true"></span>
+          </button>
+          <h2>News</h2>
         </header>
 
-        <main>
-            <section id="home" class="content-section active">
-                <p>I'm finishing my Bachelor's in Computer Science at <strong>Maastricht University</strong>, where I've been conducting research in AI and machine learning. Currently working as a Student Researcher at <strong>Turing</strong>, focusing on large language models and reinforcement learning.</p>
-                <p>I'm actively seeking opportunities for Master's or PhD programs to further deepen my research in AI, particularly in <strong>LLM reasoning</strong>, <strong>agentic systems</strong>, and the intersection of AI with <strong>educational applications</strong>.</p>
-                
-                <div class="news-section">
-                    <h2>News</h2>
-                    
-                    <div class="news-grid">
-                        <div class="news-card">
-                            <a href="https://huggingface.co/blog/AmirMohseni/reasoning-router" target="_blank" rel="noopener noreferrer" class="news-link">
-                                <div class="news-thumbnail">
-                                    <img src="https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/AmirMohseni/reasoning-router.png" alt="Reasoning Router">
-                                </div>
-                                <div class="news-content">
-                                    <h3>Reasoning Router: Optimizing LLM Reasoning Efficiency</h3>
-                                    <p class="news-date">Recent</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div class="collapsible-body" id="news-body">
+          <ul class="timeline">
+            <li>
+              <time datetime="2026-06">Jun 2026</time>
+              <p>
+                Graduated BSc Computer Science, Maastricht University. Bachelor thesis:
+                <a href="assets/documents/thesis.pdf"><cite>Uncertainty-Aware Legal Query Routing with Small Language Models</cite></a>.
+              </p>
+            </li>
+            <li>
+              <time datetime="2026">2026</time>
+              <p>
+                <a href="https://arxiv.org/abs/2605.14068">
+                  CurveBench: A Benchmark for Exact Topological Reasoning over Nested Jordan Curves
+                </a>
+                (arXiv:2605.14068).
+              </p>
+            </li>
+            <li>
+              <time datetime="2025">2025</time>
+              <p>
+                <a href="https://huggingface.co/blog/AmirMohseni/reasoning-router">
+                  Reasoning Router: Optimizing LLM Reasoning Efficiency
+                </a>.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-            <section id="experience" class="content-section">
-                <h2>Experience</h2>
-                
-                <div class="experience-item">
-                    <div class="experience-logo">
-                        <img src="https://logo.clearbit.com/turing.com" alt="Turing" onerror="this.onerror=null; this.src='https://www.turing.com/logo.png'; this.onerror=function(){this.src='https://via.placeholder.com/80x80/2a2522/d4a574?text=T';};">
-                    </div>
-                    <div class="experience-details">
-                        <h3>Student Researcher</h3>
-                        <p class="company">Turing</p>
-                        <p class="date">Apr 2025 – Present</p>
-                    </div>
-                </div>
+      <section class="collapsible collapsed" id="experience">
+        <header class="collapsible-header">
+          <button
+            type="button"
+            class="collapsible-toggle"
+            aria-expanded="false"
+            aria-controls="experience-body"
+            aria-label="Toggle Experience section"
+          >
+            <span class="toggle-icon" aria-hidden="true"></span>
+          </button>
+          <h2>Experience</h2>
+        </header>
 
-                <div class="experience-item">
-                    <div class="experience-logo">
-                        <img src="https://logo.clearbit.com/scale.com" alt="Scale AI" onerror="this.onerror=null; this.src='https://scale.com/logo.png'; this.onerror=function(){this.src='https://via.placeholder.com/80x80/2a2522/d4a574?text=S';};">
-                    </div>
-                    <div class="experience-details">
-                        <h3>Generative AI Researcher</h3>
-                        <p class="company">Scale AI</p>
-                        <p class="date">Sep 2024 – Apr 2025</p>
-                    </div>
-                </div>
+        <div class="collapsible-body" id="experience-body">
+          <ul class="entries">
+            <li class="entry">
+              <h3>Researcher</h3>
+              <p class="entry-meta">Turing · Apr 2025 – Present</p>
+              <p>
+                Leading a team of student researchers on LLM modeling, reinforcement learning, and evaluation.
+                Fine-tuning in-house models for tool use, code generation, and reasoning; training reward models
+                on EduArena preference data (62% → 75% accuracy). Presented EduArena at ICML 2025.
+              </p>
+            </li>
+            <li class="entry">
+              <h3>Generative AI Researcher</h3>
+              <p class="entry-meta">Scale AI · Sep 2024 – Apr 2025</p>
+              <p>
+                Fine-tuned and benchmarked open-source models (Gemma 2, Llama 3) using SFT and DPO.
+                Improved reasoning on Math-500, MMMU, and GPQA Diamond.
+              </p>
+            </li>
+            <li class="entry">
+              <h3>Research Assistant</h3>
+              <p class="entry-meta">Maastricht University · Jun 2024 – Sep 2024</p>
+              <p>
+                Collected and cleaned large-scale social-media data; trained regression models to analyze
+                post engagement and trend patterns.
+              </p>
+            </li>
+            <li class="entry">
+              <h3>Teaching Assistant</h3>
+              <p class="entry-meta">Shahid Beheshti University · Sep 2021 – May 2023</p>
+              <p>Discrete Mathematics, Advanced Programming, and Data Structures and Algorithms.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-                <div class="experience-item">
-                    <div class="experience-logo">
-                        <img src="https://www.maastrichtuniversity.nl/sites/default/files/2020-09/UM_logo.png" alt="Maastricht University" onerror="this.onerror=null; this.src='https://logo.clearbit.com/maastrichtuniversity.nl'; this.onerror=function(){this.src='https://via.placeholder.com/80x80/2a2522/d4a574?text=MU';};">
-                    </div>
-                    <div class="experience-details">
-                        <h3>Research Assistant</h3>
-                        <p class="company">Maastricht University</p>
-                        <p class="date">Jun 2024 – Sep 2024</p>
-                    </div>
-                </div>
+      <section class="collapsible collapsed" id="research">
+        <header class="collapsible-header">
+          <button
+            type="button"
+            class="collapsible-toggle"
+            aria-expanded="false"
+            aria-controls="research-body"
+            aria-label="Toggle Research section"
+          >
+            <span class="toggle-icon" aria-hidden="true"></span>
+          </button>
+          <h2>Research</h2>
+        </header>
 
-                <div class="experience-item">
-                    <div class="experience-logo">
-                        <img src="https://logo.clearbit.com/sbu.ac.ir" alt="Shahid Beheshti University" onerror="this.onerror=null; this.src='https://via.placeholder.com/80x80/2a2522/d4a574?text=SBE';">
-                    </div>
-                    <div class="experience-details">
-                        <h3>Teaching Assistant</h3>
-                        <p class="company">Shahid Beheshti University</p>
-                        <p class="date">Sep 2021 – May 2023</p>
-                    </div>
-                </div>
-            </section>
+        <div class="collapsible-body" id="research-body">
+          <ul class="entries">
+            <li class="entry">
+              <h3>
+                <a href="https://arxiv.org/abs/2605.14068">
+                  CurveBench: A Benchmark for Exact Topological Reasoning over Nested Jordan Curves
+                </a>
+              </h3>
+              <p class="entry-meta">
+                Amirreza Mohseni, Mona Mohammadi, Morteza Saghafian, Naser Talebizadeh Saradari ·
+                arXiv preprint, 2026
+              </p>
+              <p>
+                Benchmark for exact topological reasoning over nested Jordan curves, with RLVR-style fine-tuning
+                experiments for vision-language models using structured rewards from rooted-tree recovery.
+              </p>
+            </li>
+            <li class="entry">
+              <h3>
+                <a href="assets/documents/thesis.pdf">
+                  <cite>Uncertainty-Aware Legal Query Routing with Small Language Models</cite>
+                </a>
+              </h3>
+              <p class="entry-meta">
+                Bachelor thesis, Maastricht University · MARBLE Research Program · Supervisor: Jerry Spanakis
+              </p>
+              <p>
+                Studied whether small language models can learn legal query routing from frontier-model annotations
+                on real-world chatbot conversations. A 4B instruction-tuned model reached 91.2% agreement on
+                legal-guidance routing; a Don't-Know abstention option improved handling of borderline cases.
+              </p>
+            </li>
+            <li class="entry">
+              <h3>
+                <a href="https://huggingface.co/blog/AmirMohseni/reasoning-router">Reasoning Router</a>
+              </h3>
+              <p class="entry-meta">
+                Technical blog ·
+                <a href="https://huggingface.co/collections/AmirMohseni/reasoning-router">Models</a>
+              </p>
+              <p>
+                Automated router that predicts the optimal reasoning mode per query. Maintains performance within
+                5% of the best model while reducing token usage by nearly 50%.
+              </p>
+            </li>
+            <li class="entry">
+              <h3>
+                <a href="https://www.turing.com/blog/edu-arena-rethinking-education-in-the-age-of-ai">EduArena</a>
+              </h3>
+              <p class="entry-meta">Research platform · Turing</p>
+              <p>
+                Core contributor to a large-scale crowdsourcing platform for evaluating LLMs on educational tasks,
+                including model routing pipelines and RLVR data generation.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
 
-            <section id="research" class="content-section">
-                <h2>Research</h2>
-                
-                <div class="research-item">
-                    <div class="research-content">
-                        <div class="research-thumbnail">
-                            <a href="https://huggingface.co/blog/AmirMohseni/reasoning-router" target="_blank" rel="noopener noreferrer">
-                                <img src="https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/AmirMohseni/reasoning-router.png" alt="Reasoning Router" onerror="this.style.display='none'">
-                            </a>
-                        </div>
-                        <div class="research-text">
-                            <h3>
-                                <a href="https://huggingface.co/blog/AmirMohseni/reasoning-router" target="_blank" rel="noopener noreferrer">
-                                    Reasoning Router <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </h3>
-                            <p>Developed an automated router that predicts the optimal reasoning mode for each query, addressing the inefficiency of hybrid LLM systems. The system achieves performance within 5% of the best model's accuracy while reducing token usage by nearly 50% and improving response latency. <a href="https://huggingface.co/collections/AmirMohseni/reasoning-router" target="_blank" rel="noopener noreferrer">View on Hugging Face</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="research-item">
-                    <div class="research-content">
-                        <div class="research-thumbnail logo-thumbnail">
-                            <a href="https://www.turing.com/blog/edu-arena-rethinking-education-in-the-age-of-ai" target="_blank" rel="noopener noreferrer">
-                                <img src="https://www.eduarena.ai/og-image.png" alt="EduArena" onerror="this.onerror=null; this.src='https://www.eduarena.ai/logo.png'; this.onerror=function(){this.style.display='none'; this.parentElement.parentElement.style.display='none';};">
-                            </a>
-                        </div>
-                        <div class="research-text">
-                            <h3>
-                                <a href="https://www.turing.com/blog/edu-arena-rethinking-education-in-the-age-of-ai" target="_blank" rel="noopener noreferrer">
-                                    EduArena <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </h3>
-                            <p>Early engineer and core contributor to EduArena, a large-scale research crowd-sourcing platform for evaluating LLMs on educational tasks. Worked on developing automated pipelines for model selection and routing, and contributed to reinforcement learning data generation systems.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="research-item">
-                    <div class="research-content">
-                        <div class="research-thumbnail">
-                            <img src="images/marble-thumb.jpg" alt="MARBLE Project" onerror="this.style.display='none'; this.parentElement.parentElement.style.display='none';">
-                        </div>
-                        <div class="research-text">
-                            <h3>User–LLM Legal Interaction Analysis</h3>
-                            <p><strong>MARBLE Research Project</strong> (Work in Progress): Developing a classifier to analyze how users seek legal advice from LLMs using real-world chatbot data. Created a taxonomy to categorize conversations by legal context and identify common patterns in user legal queries, with plans for publication submission.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-        </footer>
-    </div>
-    <script>
-        // Tab navigation functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('.nav-link');
-            const sections = document.querySelectorAll('.content-section');
-            
-            // Handle navigation clicks
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    const targetSection = this.getAttribute('data-section');
-                    
-                    // Remove active class from all links and sections
-                    navLinks.forEach(l => l.classList.remove('active'));
-                    sections.forEach(s => s.classList.remove('active'));
-                    
-                    // Add active class to clicked link and corresponding section
-                    this.classList.add('active');
-                    document.getElementById(targetSection).classList.add('active');
-                    
-                    // Update URL hash without scrolling
-                    history.pushState(null, null, '#' + targetSection);
-                });
-            });
-            
-                    // Handle initial hash on page load
-            const hash = window.location.hash.substring(1);
-            if (hash && ['home', 'experience', 'research'].includes(hash)) {
-                navLinks.forEach(l => l.classList.remove('active'));
-                sections.forEach(s => s.classList.remove('active'));
-                document.querySelector(`[data-section="${hash}"]`).classList.add('active');
-                document.getElementById(hash).classList.add('active');
-            }
-        });
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>
-
