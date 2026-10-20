@@ -250,6 +250,14 @@ cite {
   color: var(--text-muted);
 }
 
+.achievements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  list-style: none;
+  color: var(--text-muted);
+}
+
 /* Responsive */
 
 @media (max-width: 640px) {
